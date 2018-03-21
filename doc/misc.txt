@@ -1,0 +1,57 @@
+*misc.txt*    Miscellaneous vim commands
+
+==============================================================================
+Contents                                                         *a1-misc*
+
+    1. Intro ........................................ |a1-misc-intro|
+    2. Commands ..................................... |a1-misc-commands|
+    3. Key bindings ................................. |a1-misc-binding|
+
+==============================================================================
+1. Intro                                                    *a1-misc-intro*
+
+The vim-misc plugin contains Vim commands that are quite useful for me
+and too big for my .vimrc file.
+
+==============================================================================
+2. Commands                                              *a1-misc-commands*
+
+List of defined Vim commands.
+
+                                                                 *:Ctoggle*
+:Ctoggle            Toggle the quickfix windows.
+                    For more details read ":copen" and ":cclose".
+
+                                                                 *:Ltoggle*
+:Ltoggle            Toggle the location list for the current windows.
+                    For more details read ":lopen" and ":lclose".
+
+                                                                 *:Stripws*
+:Stripws            Delete trailing spaces in the current buffer.
+
+:Stripws!           Like ":Stripws", but also remove empty lines
+                    at the end of file.
+
+                                                                    *:Wreg*
+:Wreg {file} [x]    Save content of one or more registers x
+                    under the name {file} without changing state of
+                    these registers. If file with the name {file}
+                    already exists then content of registers will be
+                    append to the end of file.
+
+:Wreg! {file} [x]   Like ":Wreg", but overwrite an existing file.
+
+==============================================================================
+3. Key bindings                                           *a1-misc-binding*
+
+The vim-misc provides the following options for key bindings:
+
+<Plug>(a1black#misc#ctoggle)
+                    Binding for toggling the quickfix window.
+
+<Plug>(a1black#misc#ltoggle)
+                    Binding for toggling the location list window.
+
+<Plug>(a1black#misc#n#stripws)
+<Plug>(a1black#misc#v#stripws)
+                    Binding for deleting trailing whitespaces.
