@@ -18,14 +18,6 @@ and too big for my .vimrc file.
 
 List of defined Vim commands.
 
-                                                                 *:Ctoggle*
-:Ctoggle            Toggle the quickfix windows.
-                    For more details read ":copen" and ":cclose".
-
-                                                                 *:Ltoggle*
-:Ltoggle            Toggle the location list for the current windows.
-                    For more details read ":lopen" and ":lclose".
-
                                                                  *:Stripws*
 :Stripws            Delete trailing spaces in the current buffer.
 
@@ -45,12 +37,6 @@ List of defined Vim commands.
 3. Key bindings                                           *a1-misc-binding*
 
 The vim-misc provides the following options for key bindings:
-
-<Plug>(a1black#misc#ctoggle)
-                    Binding for toggling the quickfix window.
-
-<Plug>(a1black#misc#ltoggle)
-                    Binding for toggling the location list window.
 
 <Plug>(a1black#misc#n#stripws)
 <Plug>(a1black#misc#v#stripws)

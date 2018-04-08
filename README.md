@@ -7,5 +7,3 @@ List of defined commands.
 | -------------------- | ---------------------------------------------------------- |
 | `:Stripws`           | Delete trailing spaces and empty lines at the end of file. |
 | `:Wreg path ...regs` | Copy specified registers to a file.                        |
-| `:Ltoggle`           | Toggle location list window.                               |
-| `:Ctoggle`           | Toggle quickfix window.                                    |
