@@ -1,4 +1,7 @@
 " vim: sw=4  ts=4 et
+" General settings.
+setlocal noshowmatch
+
 " Set colorscheme for php files.
 if exists('g:a1black_misc_colorscheme_php')
         \ && !empty(g:a1black_misc_colorscheme_php)
@@ -9,11 +12,9 @@ endif
 
 " ALE Lint plugin settings.
 let b:ale_enabled = 1
-let b:ale_max_signs = 30
-let b:ale_maximum_file_size = 20480
 let b:ale_msg_format = '%s'
 let b:ale_echo_msg_format = '%s'
-let b:ale_lint = ['php', 'phpstan', 'phpcs']
+let b:ale_linters = ['php', 'phpstan', 'phpcs']
 let b:ale_fixers = ['php_cs_fixer', 'phpcbf']
 let b:ale_php_phpstan_level = 4
 let b:ale_php_phpcs_standard = 'PSR2'
