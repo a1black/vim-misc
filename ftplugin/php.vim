@@ -33,3 +33,6 @@ if !empty(b:phpcs)
     let b:ale_php_phpcs_standard = ''
     let b:ale_php_phpcbf_standard = ''
 endif
+" Gutentags plugin settings.
+let g:gutentags_ctags_exclude = ['.git', 'public', 'storage', 'node_modules']
+let g:gutentags_ctags_extra_args = ['--languages=Php', '--map-Php=+.phpt', '-h .php', '--fields=+Saim']
